@@ -14,5 +14,16 @@
       <h1 id='mon'></h1>
       <h1>dollars since you opened this page.</h1>
     </div>
+    <script>
+      var x = 0;
+      var y = 0;
+      var mon = document.getElementById("mon");
+      function calc() {
+        x ++;
+        y = (((3600/24)/60)/60);
+        mon.innerText = "$" + (x*y).toString();
+      }
+      window.setInterval(calc, 1000);
+    </script>
   </body>
 </html>
